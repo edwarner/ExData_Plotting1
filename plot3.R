@@ -6,7 +6,7 @@ datarange$timestamp <- strptime(datarange$timestamp, "%Y-%m-%d %H:%M:%S")
 
 png(filename="plot3.png")
 
-plot(x=c(datarange$timestamp, datarange$timestamp, datarange$timestamp), y=c(datarange$Sub_metering_1, datarange$Sub_metering_2, datarange$Sub_metering_3), type="n", xlab="", ylab="Energey sub metering")
+plot(x=c(datarange$timestamp, datarange$timestamp, datarange$timestamp), y=c(datarange$Sub_metering_1, datarange$Sub_metering_2, datarange$Sub_metering_3), type="n", xlab="", ylab="Energy sub metering")
 
 lines(x=datarange$timestamp, y=datarange$Sub_metering_1)
 lines(x=datarange$timestamp, y=datarange$Sub_metering_2, col="red")
